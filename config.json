@@ -1,0 +1,47 @@
+{
+    "telegram": {
+        "BotToken": "234567890:ABCDEFGHIJK-a1b2c3d4",
+        "ChatID": 123456789,
+        "enable": true
+    },
+    "WebsiteTasks": [
+        {
+            "Website": "example.com",
+            "BackupSource": "/var/www/html/example.com",
+            "StorePath": "/opt/backupData/site/examplecom",
+            "MaxBackup": 5,
+            "OnedrivePath": "pOD:/websiteBackup/site/examplecom"
+        },
+        {
+            "Website": "no.database.example.com",
+            "BackupSource": "/var/www/html/no.database.example.com",
+            "StorePath": "/opt/backupData/site/nodatabaseexamplecom",
+            "MaxBackup": 5,
+            "OnedrivePath": "pOD:/websiteBackup/site/nodatabaseexamplecom"
+        }
+    ],
+    "DatabaseTasks": [
+        {
+            "Database": "examplecom",
+            "StorePath": "/opt/backupData/database/examplecom",
+            "MaxBackup": 7,
+            "OnedrivePath": "pOD:/websiteBackup/database/examplecom"
+        }
+    ],
+    "ConfigTasks": [
+        {
+            "Name": "systemMonitor",
+            "BackupSource": "/opt/systemMonitor",
+            "StorePath": "/opt/backupData/config/systemMonitor",
+            "MaxBackup": 5,
+            "OnedrivePath": "pOD:/websiteBackup/config/systemMonitor"
+        },
+        {
+            "Name": "systemUpdate",
+            "BackupSource": "/opt/systemUpdate",
+            "StorePath": "/opt/backupData/config/systemUpdate",
+            "MaxBackup": 5,
+            "OnedrivePath": "pOD:/websiteBackup/config/systemUpdate"
+        }
+    ]
+}
